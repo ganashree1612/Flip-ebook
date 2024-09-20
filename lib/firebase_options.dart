@@ -2,6 +2,7 @@
 // ignore_for_file: type=lint
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
+import 'package:flutter_dotenv/flutter_dotenv.dart';
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
@@ -41,7 +42,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBfzI2lcb9Qq5rGxEYztFKIvufmikfJBbk',
+    apiKey: dotenv.env['GOOGLE_API_KEY']!;,
     appId: '1:793924619975:web:0fbcd535552513831b78e2',
     messagingSenderId: '793924619975',
     projectId: 'madproject-c3aec',
@@ -51,7 +52,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDwnt2TVSKr-aslfm0wTqgjmm4u53Ydav0',
+    apiKey: dotenv.env['GOOGLE_API_KEY']!;,
     appId: '1:793924619975:android:d71b586f9b143d641b78e2',
     messagingSenderId: '793924619975',
     projectId: 'madproject-c3aec',
@@ -59,7 +60,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBEycH7m2u0Wy_7RH9VQ7PspcBqF11eW7k',
+    apiKey: dotenv.env['GOOGLE_API_KEY']!;,
     appId: '1:793924619975:ios:2fb122d2607a1b681b78e2',
     messagingSenderId: '793924619975',
     projectId: 'madproject-c3aec',
@@ -68,8 +69,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBEycH7m2u0Wy_7RH9VQ7PspcBqF11eW7k',
-    appId: '1:793924619975:ios:2fb122d2607a1b681b78e2',
+    apiKey: dotenv.env['GOOGLE_API_KEY']!;,
+    appId: '\,
     messagingSenderId: '793924619975',
     projectId: 'madproject-c3aec',
     storageBucket: 'madproject-c3aec.appspot.com',
@@ -77,8 +78,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBfzI2lcb9Qq5rGxEYztFKIvufmikfJBbk',
-    appId: '1:793924619975:web:bb8c532a4f34669c1b78e2',
+    apiKey: dotenv.env['GOOGLE_API_KEY']!;,
+    appId: ,
     messagingSenderId: '793924619975',
     projectId: 'madproject-c3aec',
     authDomain: 'madproject-c3aec.firebaseapp.com',
